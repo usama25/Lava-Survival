@@ -1,11 +1,10 @@
 using System;
 using System.Collections;
 using DG.Tweening;
-using Pathfinding;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class EnemyAI : Human
+public class EnemyAI : MonoBehaviour
 {
     [Header("Detection & Combat")]
     public float detectionRadius    = 4f;
@@ -21,8 +20,6 @@ public class EnemyAI : Human
     public Animator anim;
 
     [HideInInspector] public Transform player;
-    public AIDestinationSetter dstSetter;
-    [HideInInspector] public AIPath            aiPath;
     private            int               playerMask;
     [HideInInspector] public float           nextAttackTime;
 
@@ -48,8 +45,6 @@ public class EnemyAI : Human
     public float downDuration = 0.5f;
     void Start()
     {
-        dstSetter     = GetComponent<AIDestinationSetter>();
-        aiPath        = GetComponent<AIPath>();
         playerMask    = LayerMask.GetMask("Player");
         nextAttackTime = 0f;
 
@@ -63,7 +58,6 @@ public class EnemyAI : Human
     {
         if (isDie)
         {
-            aiPath.canMove = false;
             return;
         }
 
@@ -86,7 +80,6 @@ public class EnemyAI : Human
         if (isDie) return;
         isDie = true;
         anim.SetTrigger("die");
-        dstSetter.stopMe();
 
         for (int i = 0; i < spawnCount; i++)
         {
@@ -160,11 +153,6 @@ public class EnemyAI : Human
 
         public void Enter()
         {
-            ai.aiPath.canMove = false;
-            
-            if(ai.dstSetter.target != null)
-                ai.dstSetter.RemoveTarget();
-            
             ai.anim.ResetTrigger("walk");
             ai.anim.ResetTrigger("attack");
             ai.anim.SetTrigger("idle");
@@ -204,8 +192,6 @@ public class EnemyAI : Human
 
         public void Enter()
         {
-            ai.aiPath.canMove = true;
-            ai.dstSetter.AddTarget(ai.player);
             ai.anim.ResetTrigger("idle");
             ai.anim.ResetTrigger("attack");
             ai.anim.SetTrigger("walk");
@@ -234,8 +220,7 @@ public class EnemyAI : Human
 
         public void Exit()
         {
-            if(ai.dstSetter.target != null)
-                ai.dstSetter.RemoveTarget();
+           
         }
     }
 
@@ -250,9 +235,6 @@ public class EnemyAI : Human
 
         public void Enter()
         {
-            ai.aiPath.canMove = false;  
-            if(ai.dstSetter.target != null)
-                ai.dstSetter.RemoveTarget();
             ai.anim.ResetTrigger("walk");
             ai.anim.ResetTrigger("idle");
             ai.anim.SetTrigger("attack");

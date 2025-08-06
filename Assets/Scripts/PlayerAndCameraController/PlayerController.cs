@@ -109,7 +109,6 @@ public class PlayerController : MonoBehaviour
 
         public void DownloadNow()
         {
-            Application.OpenURL("https://play.google.com/store/apps/details?id=com.gamelegendstudio.lavasurvival");
         }
 
         private void OnTriggerEnter(Collider other)

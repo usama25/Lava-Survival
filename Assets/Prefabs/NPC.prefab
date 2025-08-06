@@ -1149,7 +1149,7 @@ MonoBehaviour:
   once: 0
   myStackingPlace: {fileID: 0}
   popUp: {fileID: 6693043112803170842}
-  requiredMeat: {fileID: 0}
+  requiredMeat: {fileID: 891815371024398108}
   fillImage: {fileID: 6263189567541801433}
 --- !u!114 &2259957024265178933
 MonoBehaviour:

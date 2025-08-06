@@ -1,0 +1,299 @@
+{
+    "BuildID": "fcda5950-b3b9-45e9-bb8d-bc4c5b325eee",
+    "Command": "project:build",
+    "ProjectID": "f06ae07000e6225419912104b0ab8f31",
+    "ProjectStateHash": "2b63172306db9e6de3b33dc242caa1374ab290fbfa34207dcda92d16c3981af4",
+    "StageCompletedAt": 3,
+    "EarliestFatalError": 0,
+    "StartTime": 1754477233298,
+    "EndTime": 1754477349195,
+    "PlaygroundUserID": 26323,
+    "OperatingSystem": "win32",
+    "UnityPackageID": null,
+    "TargetPlatform": "develop",
+    "UnityVersion": "2022.3.27f1",
+    "LunaVersion": "6.3.0",
+    "LogCount": 11,
+    "Logs": [
+        {
+            "LogID": "25d099aa-3872-4021-9195-a8d286c22177",
+            "Order": 7,
+            "Timestamp": 1754477349959,
+            "Stage": 3,
+            "ErrorType": 0,
+            "ErrorCode": "LP3005",
+            "Description": "You are using a Luna reserved keyword: Handle",
+            "Details": [
+                "You are using a reserved keyword: Handle for Luna. Please change the name of the field/class"
+            ],
+            "DescriptionValues": [
+                "Handle"
+            ],
+            "DetailsValues": [
+                "Handle"
+            ],
+            "LogCount": 1,
+            "LinePosition": 35,
+            "FilePath": "E:\\Unity\\Projects\\Git\\Lava-Survival\\Assets\\ThirdPartyAssets\\Joystick Pack\\Scripts\\Base\\Joystick.cs",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "c1b21c97-b696-400c-8a1a-2abf5a81d98f",
+            "Order": 7,
+            "Timestamp": 1754477349991,
+            "Stage": 3,
+            "ErrorType": 1,
+            "ErrorCode": "LP3006",
+            "Description": "You are not using the Luna API: Playable.InstallFullGame",
+            "Details": [
+                "You are not using the Luna API: Playable.InstallFullGame. Some ad networks require these calls. Please add these calls to ensure your playable works on all ad networks. Check documentation for more information."
+            ],
+            "DescriptionValues": [
+                "Playable",
+                "InstallFullGame"
+            ],
+            "DetailsValues": [
+                "Playable",
+                "InstallFullGame"
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "ec763415-0d87-40d6-ab6f-a7aacbef68fe",
+            "Order": 7,
+            "Timestamp": 1754477349993,
+            "Stage": 3,
+            "ErrorType": 1,
+            "ErrorCode": "LP3015",
+            "Description": "You are not the Game Ended API: LifeCycle.GameEnded",
+            "Details": [
+                "You are not using the Game Ended API: LifeCycle.GameEnded. Some ad networks require this call, please add the event to avoid the ad being rejected."
+            ],
+            "DescriptionValues": [
+                "LifeCycle",
+                "GameEnded"
+            ],
+            "DetailsValues": [
+                "LifeCycle",
+                "GameEnded"
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "3bdf4fe8-50b8-4e61-b85e-8163dab35360",
+            "Order": 7,
+            "Timestamp": 1754477349994,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3007",
+            "Description": "You are not using any custom events",
+            "Details": [
+                "You are not using any custom events. It is recommended to use custom events to have a better understanding of the playable."
+            ],
+            "DescriptionValues": [
+                ""
+            ],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "aa823bc8-4630-4ab2-8cca-5ed18c2a2a4f",
+            "Order": 7,
+            "Timestamp": 1754477349995,
+            "Stage": 3,
+            "ErrorType": 3,
+            "ErrorCode": "LP3011",
+            "Description": "You are not using any LunaPlaygroundFields attributes.",
+            "Details": [
+                "You are not using any LunaPlaygroundFields attributes, it allows you to configure your playable to different concepts to find the best variation, which can drastically improve playable performance on all ad networks."
+            ],
+            "DescriptionValues": null,
+            "DetailsValues": null,
+            "LogCount": 1,
+            "LinePosition": null,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "0ea4541c-d492-4cc8-9bff-2bf6a75f45ed",
+            "Order": 0,
+            "Timestamp": 1754477273934,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1016",
+            "Description": "Extensive usage of ParticleSystem Component",
+            "Details": [
+                "There is extensive usage of the ParticleSystem component.\nExcessive usage of any component can be detrimental to performance on lower and in some cases higher end devices, consider reducing the amount the component is used.\nRecommended count: 10, current count 86."
+            ],
+            "DescriptionValues": [
+                "ParticleSystem"
+            ],
+            "DetailsValues": [
+                "ParticleSystem",
+                "10",
+                "86"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "a58699cf-6bf3-4213-89d8-1d7a0a8cf1dc",
+            "Order": 1,
+            "Timestamp": 1754477273985,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1027",
+            "Description": "This DOTween version is not supported",
+            "Details": [
+                "The incorrect DOTween version for this Unity version is in use, please update or downgrade to the recommended version {0} in the package manager. Go to Window → Package Manager."
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                ""
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "94143e17-f819-4897-90cd-5b1c5fb92eca",
+            "Order": 2,
+            "Timestamp": 1754477273985,
+            "Stage": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1032",
+            "Description": "Package(s) is not supported in Luna",
+            "Details": [
+                "Currently package(s) com.unity.timeline are not supported in Luna. We recommend you to remove it and workaround it's functionality."
+            ],
+            "DescriptionValues": [
+                "com.unity.timeline (1.8.7)"
+            ],
+            "DetailsValues": [
+                "com.unity.timeline"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "E:/Unity/Projects/Git/Lava-Survival/Packages\\manifest.json",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "5d43f606-6340-46af-bc47-a731c125fc14",
+            "Order": 3,
+            "Timestamp": 1754477273991,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1010",
+            "Description": "Looks like a collider was scaled, this might affect performance.",
+            "Details": [
+                "NPC",
+                "Goriila",
+                "In",
+                "Out",
+                "Volume",
+                "Lava-BaseGround",
+                "Cube",
+                "Cube (1)",
+                "Cube (2)",
+                "Cube (3)",
+                "Cube (4)",
+                "Cube (5)",
+                "Cube (6)",
+                "Walls",
+                "Walls (1)",
+                "Walls (3)",
+                "Walls (4)",
+                "Walls (5)",
+                "Walls (6)",
+                "Walls (2)",
+                "Cube",
+                "table_03",
+                "Upgrade"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [],
+            "LogCount": 23,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "05e0a72d-b6a4-43bc-86d3-64f2c12317bc",
+            "Order": 4,
+            "Timestamp": 1754477273991,
+            "Stage": 1,
+            "ErrorType": 3,
+            "ErrorCode": "LP1008",
+            "Description": "There are missing components on Text (TMP).",
+            "Details": [
+                "Text (TMP)",
+                "Text (TMP)"
+            ],
+            "DescriptionValues": [
+                "Text (TMP)"
+            ],
+            "DetailsValues": [],
+            "LogCount": 2,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        },
+        {
+            "LogID": "89f88824-e753-494e-8dcd-0fe4f64b7794",
+            "Order": 5,
+            "Timestamp": 1754477273991,
+            "Stage": 1,
+            "ErrorType": 2,
+            "ErrorCode": "LP1000",
+            "Description": "Big mesh usage, this might significantly increase output files size.",
+            "Details": [
+                "Big mesh {0} used on {1} game object, this might significantly increase output files size and take too much memory"
+            ],
+            "DescriptionValues": [],
+            "DetailsValues": [
+                "StoneQuarry_low",
+                "StoneQuarry_low"
+            ],
+            "LogCount": 1,
+            "LinePosition": 0,
+            "FilePath": "",
+            "ClassName": "",
+            "MemberName": "",
+            "Severity": 0
+        }
+    ]
+}
